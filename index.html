@@ -245,6 +245,43 @@
       margin-bottom: 12px;
       font-weight: bold;
     }
+    /* Clients */
+.clients {
+  background: white;
+  text-align: center;
+}
+
+.client-scroll {
+  overflow: hidden;
+  width: 100%;
+}
+
+.client-track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  animation: clientScroll 15s linear infinite;
+}
+
+.client-track span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6c2bd9;
+  white-space: nowrap;
+}
+
+@keyframes clientScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+    
 
     /* Contact */
     .contact {
@@ -518,6 +555,27 @@
       <span class="tag">Monster</span>
       <span class="tag">Naukri</span>
       <span class="tag">CEIPAL ATS</span>
+    </div>
+
+  </section>
+
+    <!-- Clients -->
+  <section class="clients">
+
+    <div class="section-title">
+      <h2>Clients</h2>
+      <p>Organizations and clients I have supported</p>
+    </div>
+
+    <div class="client-scroll">
+      <div class="client-track">
+        <span>TRBHI</span>
+        <span>Mayo Clinic</span>
+        <span>Frontier Communications</span>
+        <span>TRBHI</span>
+        <span>Mayo Clinic</span>
+        <span>Frontier Communications</span>
+      </div>
     </div>
 
   </section>
