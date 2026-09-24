@@ -246,7 +246,7 @@
       font-weight: bold;
     }
     /* Clients */
-.clients {
+..clients {
   background: white;
   text-align: center;
 }
@@ -258,15 +258,21 @@
 
 .client-track {
   display: flex;
-  gap: 80px;
+  gap: 25px;
   width: max-content;
   animation: clientScroll 15s linear infinite;
 }
 
-.client-track span {
-  font-size: 24px;
+.client-box {
+  width: 240px;
+  padding: 30px 20px;
+  background: white;
+  border: 2px solid #6c2bd9;
+  border-radius: 15px;
+  font-size: 22px;
   font-weight: bold;
   color: #6c2bd9;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   white-space: nowrap;
 }
 
@@ -559,26 +565,29 @@
 
   </section>
 
-    <!-- Clients -->
-  <section class="clients">
+  <!-- Clients -->
+<section class="clients">
 
-    <div class="section-title">
-      <h2>Clients</h2>
-      <p>Organizations and clients I have supported</p>
+  <div class="section-title">
+    <h2>Clients</h2>
+    <p>Organizations and clients I have supported</p>
+  </div>
+
+  <div class="client-scroll">
+    <div class="client-track">
+
+      <div class="client-box">TRBHI</div>
+      <div class="client-box">Mayo Clinic</div>
+      <div class="client-box">Frontier Communications</div>
+
+      <div class="client-box">TRBHI</div>
+      <div class="client-box">Mayo Clinic</div>
+      <div class="client-box">Frontier Communications</div>
+
     </div>
+  </div>
 
-    <div class="client-scroll">
-      <div class="client-track">
-        <span>TRBHI</span>
-        <span>Mayo Clinic</span>
-        <span>Frontier Communications</span>
-        <span>TRBHI</span>
-        <span>Mayo Clinic</span>
-        <span>Frontier Communications</span>
-      </div>
-    </div>
-
-  </section>
+</section>
 
   <section id="contact" class="contact">
 
